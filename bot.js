@@ -24,7 +24,7 @@ client.login(process.env.BOT_TOKEN);
 var prefix = ('.')
 client.on('message', message => {
     if (message.author.bot) return;
-     if (message.content === prefix + "help-en") {
+     if (message.content === prefix + "help") {
 		 message.channel.send('**The Message Was Sent On Private**');
 
 
@@ -241,7 +241,7 @@ client.on('message', message => {
       console.log(`Logged in as ${client.user.tag}!`);
     });
              client.on('message', message => {
-                if (message.content === '+invite') {
+                if (message.content === '.invite') {
                   message.channel.send('**https://bit.ly/2LGyOUu**');
                   message.channel.sendFile("./photoshop.PNG");
 
